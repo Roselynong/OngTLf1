@@ -22,7 +22,7 @@
     }
 
     function startTraffic() {
-        light(0); // Start with neutral
+        light(0);
         intervalID = setInterval(trafficSwitchAutomatic, 6000);
     }
 
@@ -43,7 +43,7 @@
     }
 </script>
 
-<img id="myImage" src="neutral.jpg" width="30%" height="30%">
+<img id="myImage" src="neutral.jpg" width="10%" height="10%">
 
 <p>
     <button type="button" onclick="light(0)" >Light on Neutral</button>
