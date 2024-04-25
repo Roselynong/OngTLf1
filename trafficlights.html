@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<body>
+<script>
+    function light(sw) {
+        var pic;
+        if (sw == 0) {
+            pic = "neutral.jpg";
+        }
+        else if (sw == 1) {
+            pic = "green.jpg";
+        }
+        else if (sw == 2) {
+            pic = "yellow.jpg";
+        }
+        else {
+            pic = "red.jpg";
+        }
+        document.getElementById("myImage").src = pic;
+    }
+</script>
+
+<img id="myImage" src="neutral.jpg" width="30%" height="30%">
+
+<p>
+    <button type="button" onclick="light(0)" >Light on Neutral</button>
+    <button type="button" onclick="light(1)" >Light on Green</button>
+    <button type="button" onclick="light(2)" >Light on Yellow</button>
+    <button type="button" onclick="light(3)" >Light on Red</button>
+</p>
+
+</body>
+</html>
