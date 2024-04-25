@@ -23,7 +23,7 @@
 
     function startTraffic() {
         light(0);
-        intervalID = setInterval(trafficSwitchAutomatic, 6000);
+        intervalID = setInterval(trafficSwitchAutomatic, 2000);
     }
 
     function stopTraffic() {
@@ -41,21 +41,13 @@
             light(0);
         }
     }
+    
+    window.onload = function() {
+        startTraffic();
+    };
 </script>
 
-<img id="myImage" src="neutral.jpg" width="10%" height="10%">
-
-<p>
-    <button type="button" onclick="light(0)" >Light on Neutral</button>
-    <button type="button" onclick="light(1)" >Light on Green</button>
-    <button type="button" onclick="light(2)" >Light on Yellow</button>
-    <button type="button" onclick="light(3)" >Light on Red</button>
-</p>
-
-<p>
-    <button type="button" onclick="startTraffic()">Start Traffic</button>
-    <button type="button" onclick="stopTraffic()">Stop Traffic</button>
-</p>
+<img style="margin: 15% 50%;" id="myImage" src="neutral.jpg" width="5%" height="5%">
 
 </body>
 </html>
